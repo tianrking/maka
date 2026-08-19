@@ -3,8 +3,20 @@ name: Windows recovery
 on:
   pull_request:
     branches: [main]
-  push:
-    branches: [main]
+    paths:
+      - '.github/workflows/windows-recovery.yml'
+      - '.npmrc'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'patches/**'
+      - 'packages/core/**'
+      - 'packages/runtime/**'
+      - 'packages/runtime-host/**'
+      - 'packages/storage/**'
+      - 'scripts/build-cursor-overlay.mjs'
+      - 'scripts/clean-build.mjs'
+      - 'scripts/windows-runtime-host-local-ipc-trust.ps1'
+      - 'tsconfig*.json'
   workflow_dispatch:
 
 concurrency:

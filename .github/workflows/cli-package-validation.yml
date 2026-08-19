@@ -30,35 +30,6 @@ on:
       - 'scripts/release-cli-*.mjs'
       - 'scripts/smoke-release-cli-package.mjs'
       - 'tsconfig*.json'
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/cli-package-validation.yml'
-      - '.github/workflows/release-cli-*.yml'
-      - '.gitattributes'
-      - '.npmrc'
-      - 'LICENSE'
-      - 'NOTICE'
-      - 'DISCLAIMER-WIP'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'patches/**'
-      - 'packages/cli/**'
-      - 'packages/code-mode/**'
-      - 'packages/core/**'
-      - 'packages/eval/**'
-      - 'packages/mcp/**'
-      - 'packages/runtime/**'
-      - 'packages/runtime-host/**'
-      - 'packages/storage/**'
-      - 'scripts/apply-dependency-patches.mjs'
-      - 'scripts/clean-paths.mjs'
-      - 'scripts/generate-third-party-notices.mjs'
-      - 'scripts/install-electron-with-retry.mjs'
-      - 'scripts/npm-spawn.mjs'
-      - 'scripts/release-cli-*.mjs'
-      - 'scripts/smoke-release-cli-package.mjs'
-      - 'tsconfig*.json'
   workflow_call:
     outputs:
       release_candidate_artifact_id:
